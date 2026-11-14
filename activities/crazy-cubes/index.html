@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<title>Crazy cubes: solving a cube puzzle with network graphs | Jennifer Palisse</title>
+<meta name="description" content="A deceptively tricky puzzle: line up four coloured cubes so every side shows each colour once. Students use network graphs from graph theory to crack it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Outfit:wght@300;400;500&family=Caveat:wght@600;700&display=swap">
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="../../"><img src="../../favicon.svg" alt="" width="20" height="20">Jennifer Palisse</a>
+    <nav aria-label="Main">
+      <a href="../" aria-current="page">Activities</a>
+      <a href="../../research/">Research</a>
+      <a href="../../publications/">Publications and talks</a>
+      <a href="../../about/">About</a>
+      <a href="../../work-with-me/">Work with me</a>
+    </nav>
+  </header>
+</div>
+
+<main>
+  <div class="tint-a act-band">
+  <div class="wrap">
+    <section class="act-hero">
+      <div class="stack" style="gap:20px; min-width:0">
+        <p class="crumbs"><a href="../">Activities</a> / Crazy cubes</p>
+        <h1>Crazy cubes</h1>
+        <p class="lede measure">Four cubes, four colours. Line them up so every side of the row shows each colour once. How hard can it be?</p>
+      </div>
+      <div class="pic illo" data-illo="crazy-cubes"></div>
+    </section>
+  </div>
+  </div>
+
+  <div class="wrap">
+    <section class="band prose act-body">
+      <h2>What students do</h2>
+      <p>Students get four cubes, each with faces in four colours, and try to arrange them in a row so that the top, bottom, front, and back each show one face of every colour. It's a classic puzzle, sold in the 1960s as Instant Insanity, and it's deceptively tricky.</p>
+      <p>Trial and error gets students started, but not very far. Then they learn to draw each cube as a network graph, combine the four graphs into one, and use it to solve the puzzle.</p>
+      <h2>The maths behind it</h2>
+      <p>Graph theory is the maths of networks: dots joined by lines, called edges. Here, each colour becomes a dot. A cube has three pairs of opposite faces, and each pair becomes an edge joining its two colours. If both faces in a pair are the same colour, the edge loops back to its own dot.</p>
+      <div class="figs">
+        <figure><div class="pic illo" data-illo="cube-net-graph"></div><figcaption>Each pair of opposite faces (a, b, and c) becomes an edge between their two colours.</figcaption></figure>
+      </div>
+      <p>Draw all four cubes this way, label each edge with its cube's number, and put everything on one graph. The puzzle then becomes a search for two smaller graphs inside the big one: one for the front and back of the row, and one for the top and bottom. Each must use exactly one edge from every cube, every colour must appear exactly twice, and the two can't share an edge.</p>
+      <p>I wrote about this activity in <a href="https://drive.google.com/file/d/1KcvOtZ78oMynVIUIgtcZBsp8AO-2GMlc/view?usp=share_link">Crazy cubes: Positioning incorrect answers as valuable</a>, Australian Mathematics Education Journal, 4(2), 22&ndash;27 (2022).</p>
+    </section>
+  </div>
+</main>
+
+<section class="tint-b">
+  <div class="wrap band cta">
+    <h2>Bring Crazy cubes to your school</h2>
+    <p class="measure">Interested in running this activity with your students, or seeing it at a professional learning session? Get in touch.</p>
+    <a class="btn primary" href="../../work-with-me/">Work with me</a>
+  </div>
+</section>
+
+<section class="wrap band stack">
+  <div class="head-row">
+    <h2>More activities</h2>
+    <a href="../">All activities</a>
+  </div>
+  <div class="grid3">
+    <a class="card" href="../birthday-trick/">
+      <div class="pic illo" data-illo="birthday-trick"></div>
+      <h3>The birthday trick</h3>
+      <p>Guess the day of anyone&rsquo;s birthday, from 1 to 31, with five cards and some powers of 2.</p>
+    </a>
+    <a class="card" href="../stationery-maths/">
+      <div class="pic illo" data-illo="paper-clips"></div>
+      <h3>Stationery maths</h3>
+      <p>Make paper clips and rubber bands do some strange things on strips of paper.</p>
+    </a>
+    <a class="card" href="../dizzying-squares/">
+      <div class="pic illo" data-illo="spiralling-square"></div>
+      <h3>Dizzying squares</h3>
+      <p>Doodle infinite squares to see how an infinite set of numbers can add up.</p>
+    </a>
+  </div>
+</section>
+
+<footer class="wrap foot">
+  <p>Let's chat about maths, teaching, or research. <a href="../../work-with-me/">Work with me</a></p>
+  <div>
+    <a href="https://www.linkedin.com/in/mathsahoy/">LinkedIn</a>
+    <a href="https://orcid.org/0000-0002-1245-3520">ORCID</a>
+    <a href="https://minerva-access.unimelb.edu.au/items/eab84d38-bff2-421e-abc6-2bdf36058ad2">PhD thesis</a>
+  </div>
+</footer>
+<script src="../../illustrations.js"></script>
+</body>
+</html>
