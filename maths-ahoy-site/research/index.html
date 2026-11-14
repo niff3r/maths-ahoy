@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<title>Comparative judgement in mathematics: research | Jennifer Palisse</title>
+<meta name="description" content="Jennifer Palisse's PhD research on comparative judgement as a pedagogical tool in mathematics: what happens when students compare two solutions side by side.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Outfit:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="../"><img src="../favicon.svg" alt="" width="20" height="20">Jennifer Palisse</a>
+    <nav aria-label="Main">
+      <a href="../activities/">Activities</a>
+      <a href="./" aria-current="page">Research</a>
+      <a href="../publications/">Publications and talks</a>
+      <a href="../about/">About</a>
+      <a href="../work-with-me/">Work with me</a>
+    </nav>
+  </header>
+</div>
+
+<main>
+  <div class="tint-a">
+    <div class="wrap page-head">
+      <h1>Research</h1>
+      <p class="lede measure">My PhD looked at students peer reviewing maths work using comparative judgement.</p>
+      <p class="measure">Usually, an assessor judges each piece of work on its own, often against a rubric. In comparative judgement, the assessor looks at two pieces of work side by side and simply decides which one is better. Repeat that with lots of different pairs, and all those decisions combine into a ranking of every piece of work, from strongest to weakest.</p>
+    </div>
+  </div>
+
+  <section class="wrap band stack">
+    <div class="stack" style="gap:12px">
+      <h2>Which one's better?</h2>
+      <p class="measure">Here are two students' solutions to the same inequality problem. Which one do you think is better? Click to choose.</p>
+    </div>
+    <div class="compare">
+      <div class="choice">
+        <button class="pick" id="pick-a" type="button" aria-pressed="false"><img src="../photos/f9979d12.jpg" alt="Student worked solution to an inequality using a sign graph"><span>Solution A</span></button>
+        <p class="why" hidden>Students who chose A often said it was neater, with clearer handwriting, and that it explained the steps in words.</p>
+      </div>
+      <div class="choice">
+        <button class="pick" id="pick-b" type="button" aria-pressed="false"><img src="../photos/fb79b9d8.jpg" alt="Student worked solution to the same inequality using two cases"><span>Solution B</span></button>
+        <p class="why" hidden>Students who chose B often said it was easier to follow than A.</p>
+      </div>
+    </div>
+    <div class="prose reveal" id="reveal" aria-live="polite" hidden>
+      <p>That's comparative judgement in action. In my research, I looked at the effect it had on students' learning. When students then solved the exact same problem themselves, did those who had compared worked solutions side by side do better, worse, or the same as students who were shown the same worked solutions one at a time?</p>
+    </div>
+
+    <div class="prose">
+      <h2>What I found</h2>
+      <p>Comparative judgement had worked well in subjects like Design and Technology, but had barely been tried in maths. Across three studies, I looked at what students think about as they compare, and whether comparing helps them learn.</p>
+      <p>The results depend on the context, but two differences stood out.</p>
+      <h3>Comparing two solutions is easier</h3>
+      <p>When students look at two solutions side by side, they can use each one to judge the other. Is this step clearer than that one? Is this method quicker? Does this explanation make more sense? Every decision is a comparison between two things they can see, so they don't need to already know what a perfect answer looks like.</p>
+      <h3>Judging one solution on its own is harder</h3>
+      <p>With only one solution in front of them, students have to rely on their own sense of what good work looks like. That's harder, because it draws on prior knowledge and experience. If students haven't seen good work of this kind before, they have nothing to judge it against.</p>
+      <p>However, when students judged one solution at a time, they paid closer attention to accuracy. That may make it a useful approach for building procedural skills.</p>
+    </div>
+  </section>
+
+  <div class="tint-a">
+    <section class="wrap band prose">
+      <h2>What's still open</h2>
+      <p>We still know very little about how comparative judgement works with younger students, or with students who are new to it.</p>
+      <p>It's also unclear how much support to give. Does showing students the correct answer first build their confidence, or get in the way?</p>
+      <p>And the biggest question: does comparing change what students understand, or mainly how clearly they explain it?</p>
+    </section>
+  </div>
+
+  <section class="wrap band prose">
+    <h2>Read more</h2>
+    <p>My PhD thesis, <a href="https://minerva-access.unimelb.edu.au/items/eab84d38-bff2-421e-abc6-2bdf36058ad2">Comparative judgement as a pedagogical tool</a>, is available from the University of Melbourne.</p>
+    <p>You'll find my papers on the <a href="../publications/">Publications</a> page, and on <a href="https://orcid.org/0000-0002-1245-3520">ORCID</a>.</p>
+  </section>
+</main>
+
+<section class="tint-b">
+  <div class="wrap band cta">
+    <h2>Talk research with me</h2>
+    <p class="measure">Interested in comparative judgement, or keen to chat about maths education research? Get in touch.</p>
+    <a class="btn primary" href="../work-with-me/">Work with me</a>
+  </div>
+</section>
+
+<footer class="wrap foot">
+  <p>Let's chat about maths, teaching, or research. <a href="../work-with-me/">Work with me</a></p>
+  <div>
+    <a href="https://www.linkedin.com/in/mathsahoy/">LinkedIn</a>
+    <a href="https://orcid.org/0000-0002-1245-3520">ORCID</a>
+    <a href="https://minerva-access.unimelb.edu.au/items/eab84d38-bff2-421e-abc6-2bdf36058ad2">PhD thesis</a>
+  </div>
+</footer>
+
+<script>
+// After a choice, show why students tended to choose each solution, then explain the process.
+const picks = [document.getElementById('pick-a'), document.getElementById('pick-b')];
+picks.forEach((pick) => pick.addEventListener('click', () => {
+  picks.forEach(p => p.setAttribute('aria-pressed', String(p === pick)));
+  document.querySelectorAll('.choice .why, #reveal').forEach(el => { el.hidden = false; });
+}));
+</script>
+</body>
+</html>
